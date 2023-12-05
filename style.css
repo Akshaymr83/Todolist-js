@@ -1,0 +1,134 @@
+/* Your existing CSS styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #153677, #43085f); */
+    background: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    background: rgb(0, 0, 0);
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    border-radius: 40px;
+}
+
+#todohead {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    margin-top: 30px;
+    width: 700px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+}
+#inputfeild{
+    height: 30px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 21px 50px;
+    background: #02b8ef;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 7px 10px 7px 10px;
+    transition: 0.2s;
+}
+
+.create-button {
+    background-color: #36f465;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding:  7px 10px 7px 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.close-button:hover{
+    transform: scale(1.05);
+
+}
+.create-button:hover{
+    transform: scale(1.05);
+
+}
+.create-button {
+    position: absolute;
+    right: 90px;
+    margin-right: 40px;
+}
+
+.close-button {
+    position: absolute;
+    right: 35px;
+    margin-right: 40px;
+}
+
+p {
+    margin-top: 5px;
+    line-height: 2;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 50px;
+    display: flex;
+    overflow: hidden;
+    color: white;
+}
+
+#todocontainer {
+   
+    display: flex;
+   
+    flex-direction: column;
+    margin-left: -171px;
+}
